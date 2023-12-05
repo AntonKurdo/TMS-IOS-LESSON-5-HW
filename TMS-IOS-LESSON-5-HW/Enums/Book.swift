@@ -4,7 +4,7 @@ enum Book: String {
     case book3
     
     
-    var description: String {
+    func description() -> String {
         switch self {
             case .book1:
                 return "description 1"
