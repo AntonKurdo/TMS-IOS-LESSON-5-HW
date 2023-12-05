@@ -33,11 +33,13 @@ class Homework {
     
     
     static func chooseBook(book: Book) -> String {
-        return book.description
+        return book.description()
     }
     
-    static func chooseClothes(clothes: Clothes) -> String {
-        return "You've chosen \(clothes.rawValue)"
+
+    
+    static func chooseClothes(clothes: Clothes) {
+        print(clothes.chooseClothes())
     }
     
 }
